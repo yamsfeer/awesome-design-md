@@ -1,0 +1,19 @@
+{
+  "name": "awesome-design-md",
+  "version": "1.0.0",
+  "description": "Curated collection of DESIGN.md files inspired by developer focused websites",
+  "scripts": {
+    "preview": "open index.html",
+    "preview:linux": "xdg-open index.html",
+    "preview:win": "start index.html",
+    "generate": "node scripts/generate-data.js"
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "ai",
+    "llm",
+    "design-md"
+  ],
+  "license": "MIT"
+}
