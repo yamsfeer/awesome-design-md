@@ -1,36 +1,15 @@
-<a href="https://github.com/VoltAgent/voltagent">
-     <img width="1500" height="801" alt="claude-skills" src="https://github.com/user-attachments/assets/d012a0d2-cec3-4630-ba5e-acc339dbe6cf" />
-</a>
-
-
-<br/>
-<br/>
-
-<div align="center">
-    <strong>Curated collection of DESIGN.md files inspired by developer focused websites.</strong>
-    <br />
-    <br />
-
-</div>
-
-<div align="center">
-
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![DESIGN.md Count](https://img.shields.io/badge/DESIGN.md%20count-58-10b981?style=classic)
-[![Last Update](https://img.shields.io/github/last-commit/VoltAgent/awesome-design-md?label=Last%20update&style=classic)](https://github.com/VoltAgent/awesome-design-md)
-[![Discord](https://img.shields.io/discord/1361559153780195478.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://s.voltagent.dev/discord)
-
-</div>
-</div>
-
 # Awesome DESIGN.md
+
+[中文文档](README_zh.md)
 
 Copy a DESIGN.md into your project, tell your AI agent "build me a page that looks like this" and get pixel-perfect UI that actually matches.
 
+![DESIGN.md Count](https://img.shields.io/badge/DESIGN.md%20count-59-10b981?style=flat-square)
+[![Gallery](https://img.shields.io/badge/gallery-live-blue?style=flat-square)](https://yamsfeer.github.io/awesome-design-md/)
 
 ## What is DESIGN.md?
 
-[DESIGN.md](https://stitch.withgoogle.com/docs/design-md/overview/) is a new concept introduced by Google Stitch. A plain-text design system document that AI agents read to generate consistent UI.
+[DESIGN.md](https://stitch.withgoogle.com/docs/design-md/overview/) is a concept introduced by Google Stitch. A plain-text design system document that AI agents read to generate consistent UI.
 
 It's just a markdown file. No Figma exports, no JSON schemas, no special tooling. Drop it into your project root and any AI coding agent or Google Stitch instantly understands how your UI should look. Markdown is the format LLMs read best, so there's nothing to parse or configure.
 
@@ -39,9 +18,47 @@ It's just a markdown file. No Figma exports, no JSON schemas, no special tooling
 | `AGENTS.md` | Coding agents | How to build the project |
 | `DESIGN.md` | Design agents | How the project should look and feel |
 
-**This repo provides ready-to-use DESIGN.md files** extracted from real websites. 
+**This repo provides ready-to-use DESIGN.md files** extracted from real websites.
 
+## Gallery
 
+Browse all designs visually at [yamsfeer.github.io/awesome-design-md](https://yamsfeer.github.io/awesome-design-md/).
+
+## CLI
+
+A command-line tool to list, preview, and install designs. Zero dependencies.
+
+```bash
+# Install globally
+npm install -g awesome-design-md
+
+# List all designs
+awesome-design list
+
+# Filter by category
+awesome-design list --category "AI & Machine Learning"
+
+# Search
+awesome-design list --search stripe
+
+# JSON output
+awesome-design list --json
+
+# Preview in browser
+awesome-design preview claude
+awesome-design preview claude --dark
+
+# Install DESIGN.md to your project
+awesome-design install claude ./my-project
+
+# Install full directory (includes previews)
+awesome-design install claude ./my-project --full
+
+# Overwrite existing files
+awesome-design install claude ./my-project --force
+```
+
+Or use without installing: `npx awesome-design-md list`
 
 ## What's Inside Each DESIGN.md
 
@@ -67,110 +84,100 @@ Each site includes:
 | `preview.html` | Visual catalog showing color swatches, type scale, buttons, cards |
 | `preview-dark.html` | Same catalog with dark surfaces |
 
-### How to Use
-
+## How to Use
 
 1. Copy a site's `DESIGN.md` into your project root
-2. Tell your AI agent to use it.
-
-
-## Request a DESIGN.md
-
-You can [request a DESIGN.md](https://getdesign.md/request) for specific website, including private requests delivered exclusively to you. 
-
+2. Tell your AI agent to use it
 
 ## Collection
 
 ### AI & Machine Learning
 
-- [**Claude**](https://getdesign.md/claude/design-md) - Anthropic's AI assistant. Warm terracotta accent, clean editorial layout
-- [**Cohere**](https://getdesign.md/cohere/design-md) - Enterprise AI platform. Vibrant gradients, data-rich dashboard aesthetic
-- [**ElevenLabs**](https://getdesign.md/elevenlabs/design-md) - AI voice platform. Dark cinematic UI, audio-waveform aesthetics
-- [**Minimax**](https://getdesign.md/minimax/design-md) - AI model provider. Bold dark interface with neon accents
-- [**Mistral AI**](https://getdesign.md/mistral.ai/design-md) - Open-weight LLM provider. French-engineered minimalism, purple-toned
-- [**Ollama**](https://getdesign.md/ollama/design-md) - Run LLMs locally. Terminal-first, monochrome simplicity
-- [**OpenCode AI**](https://getdesign.md/opencode.ai/design-md) - AI coding platform. Developer-centric dark theme
-- [**Replicate**](https://getdesign.md/replicate/design-md) - Run ML models via API. Clean white canvas, code-forward
-- [**RunwayML**](https://getdesign.md/runwayml/design-md) - AI video generation. Cinematic dark UI, media-rich layout
-- [**Together AI**](https://getdesign.md/together.ai/design-md) - Open-source AI infrastructure. Technical, blueprint-style design
-- [**VoltAgent**](https://getdesign.md/voltagent/design-md) - AI agent framework. Void-black canvas, emerald accent, terminal-native
-- [**xAI**](https://getdesign.md/x.ai/design-md) - Elon Musk's AI lab. Stark monochrome, futuristic minimalism
+- [**Claude**](design-md/claude/DESIGN.md) - Anthropic's AI assistant. Warm terracotta accent, clean editorial layout
+- [**Cohere**](design-md/cohere/DESIGN.md) - Enterprise AI platform. Vibrant gradients, data-rich dashboard aesthetic
+- [**ElevenLabs**](design-md/elevenlabs/DESIGN.md) - AI voice platform. Dark cinematic UI, audio-waveform aesthetics
+- [**Minimax**](design-md/minimax/DESIGN.md) - AI model provider. Bold dark interface with neon accents
+- [**Mistral AI**](design-md/mistral.ai/DESIGN.md) - Open-weight LLM provider. French-engineered minimalism, purple-toned
+- [**Ollama**](design-md/ollama/DESIGN.md) - Run LLMs locally. Terminal-first, monochrome simplicity
+- [**OpenCode AI**](design-md/opencode.ai/DESIGN.md) - AI coding platform. Developer-centric dark theme
+- [**Replicate**](design-md/replicate/DESIGN.md) - Run ML models via API. Clean white canvas, code-forward
+- [**RunwayML**](design-md/runwayml/DESIGN.md) - AI video generation. Cinematic dark UI, media-rich layout
+- [**Together AI**](design-md/together.ai/DESIGN.md) - Open-source AI infrastructure. Technical, blueprint-style design
+- [**VoltAgent**](design-md/voltagent/DESIGN.md) - AI agent framework. Void-black canvas, emerald accent, terminal-native
+- [**xAI**](design-md/x.ai/DESIGN.md) - Elon Musk's AI lab. Stark monochrome, futuristic minimalism
 
 ### Developer Tools & Platforms
 
-- [**Cursor**](https://getdesign.md/cursor/design-md) - AI-first code editor. Sleek dark interface, gradient accents
-- [**Expo**](https://getdesign.md/expo/design-md) - React Native platform. Dark theme, tight letter-spacing, code-centric
-- [**Linear**](https://getdesign.md/linear.app/design-md) - Project management for engineers. Ultra-minimal, precise, purple accent
-- [**Lovable**](https://getdesign.md/lovable/design-md) - AI full-stack builder. Playful gradients, friendly dev aesthetic
-- [**Mintlify**](https://getdesign.md/mintlify/design-md) - Documentation platform. Clean, green-accented, reading-optimized
-- [**PostHog**](https://getdesign.md/posthog/design-md) - Product analytics. Playful hedgehog branding, developer-friendly dark UI
-- [**Raycast**](https://getdesign.md/raycast/design-md) - Productivity launcher. Sleek dark chrome, vibrant gradient accents
-- [**Resend**](https://getdesign.md/resend/design-md) - Email API for developers. Minimal dark theme, monospace accents
-- [**Sentry**](https://getdesign.md/sentry/design-md) - Error monitoring. Dark dashboard, data-dense, pink-purple accent
-- [**Supabase**](https://getdesign.md/supabase/design-md) - Open-source Firebase alternative. Dark emerald theme, code-first
-- [**Superhuman**](https://getdesign.md/superhuman/design-md) - Fast email client. Premium dark UI, keyboard-first, purple glow
-- [**Vercel**](https://getdesign.md/vercel/design-md) - Frontend deployment platform. Black and white precision, Geist font
-- [**Warp**](https://getdesign.md/warp/design-md) - Modern terminal. Dark IDE-like interface, block-based command UI
-- [**Zapier**](https://getdesign.md/zapier/design-md) - Automation platform. Warm orange, friendly illustration-driven
+- [**Cursor**](design-md/cursor/DESIGN.md) - AI-first code editor. Sleek dark interface, gradient accents
+- [**Expo**](design-md/expo/DESIGN.md) - React Native platform. Dark theme, tight letter-spacing, code-centric
+- [**Linear**](design-md/linear.app/DESIGN.md) - Project management for engineers. Ultra-minimal, precise, purple accent
+- [**Lovable**](design-md/lovable/DESIGN.md) - AI full-stack builder. Playful gradients, friendly dev aesthetic
+- [**Mintlify**](design-md/mintlify/DESIGN.md) - Documentation platform. Clean, green-accented, reading-optimized
+- [**PostHog**](design-md/posthog/DESIGN.md) - Product analytics. Playful hedgehog branding, developer-friendly dark UI
+- [**Raycast**](design-md/raycast/DESIGN.md) - Productivity launcher. Sleek dark chrome, vibrant gradient accents
+- [**Resend**](design-md/resend/DESIGN.md) - Email API for developers. Minimal dark theme, monospace accents
+- [**Sentry**](design-md/sentry/DESIGN.md) - Error monitoring. Dark dashboard, data-dense, pink-purple accent
+- [**Supabase**](design-md/supabase/DESIGN.md) - Open-source Firebase alternative. Dark emerald theme, code-first
+- [**Superhuman**](design-md/superhuman/DESIGN.md) - Fast email client. Premium dark UI, keyboard-first, purple glow
+- [**Vercel**](design-md/vercel/DESIGN.md) - Frontend deployment platform. Black and white precision, Geist font
+- [**Warp**](design-md/warp/DESIGN.md) - Modern terminal. Dark IDE-like interface, block-based command UI
+- [**Zapier**](design-md/zapier/DESIGN.md) - Automation platform. Warm orange, friendly illustration-driven
 
 ### Infrastructure & Cloud
 
-- [**ClickHouse**](https://getdesign.md/clickhouse/design-md) - Fast analytics database. Yellow-accented, technical documentation style
-- [**Composio**](https://getdesign.md/composio/design-md) - Tool integration platform. Modern dark with colorful integration icons
-- [**HashiCorp**](https://getdesign.md/hashicorp/design-md) - Infrastructure automation. Enterprise-clean, black and white
-- [**MongoDB**](https://getdesign.md/mongodb/design-md) - Document database. Green leaf branding, developer documentation focus
-- [**Sanity**](https://getdesign.md/sanity/design-md) - Headless CMS. Red accent, content-first editorial layout
-- [**Stripe**](https://getdesign.md/stripe/design-md) - Payment infrastructure. Signature purple gradients, weight-300 elegance
+- [**ClickHouse**](design-md/clickhouse/DESIGN.md) - Fast analytics database. Yellow-accented, technical documentation style
+- [**Composio**](design-md/composio/DESIGN.md) - Tool integration platform. Modern dark with colorful integration icons
+- [**HashiCorp**](design-md/hashicorp/DESIGN.md) - Infrastructure automation. Enterprise-clean, black and white
+- [**MongoDB**](design-md/mongodb/DESIGN.md) - Document database. Green leaf branding, developer documentation focus
+- [**Sanity**](design-md/sanity/DESIGN.md) - Headless CMS. Red accent, content-first editorial layout
+- [**Stripe**](design-md/stripe/DESIGN.md) - Payment infrastructure. Signature purple gradients, weight-300 elegance
 
 ### Design & Productivity
 
-- [**Airtable**](https://getdesign.md/airtable/design-md) - Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic
-- [**Cal.com**](https://getdesign.md/cal/design-md) - Open-source scheduling. Clean neutral UI, developer-oriented simplicity
-- [**Clay**](https://getdesign.md/clay/design-md) - Creative agency. Organic shapes, soft gradients, art-directed layout
-- [**Figma**](https://getdesign.md/figma/design-md) - Collaborative design tool. Vibrant multi-color, playful yet professional
-- [**Framer**](https://getdesign.md/framer/design-md) - Website builder. Bold black and blue, motion-first, design-forward
-- [**Intercom**](https://getdesign.md/intercom/design-md) - Customer messaging. Friendly blue palette, conversational UI patterns
-- [**Miro**](https://getdesign.md/miro/design-md) - Visual collaboration. Bright yellow accent, infinite canvas aesthetic
-- [**Notion**](https://getdesign.md/notion/design-md) - All-in-one workspace. Warm minimalism, serif headings, soft surfaces
-- [**Pinterest**](https://getdesign.md/pinterest/design-md) - Visual discovery platform. Red accent, masonry grid, image-first
-- [**Webflow**](https://getdesign.md/webflow/design-md) - Visual web builder. Blue-accented, polished marketing site aesthetic
+- [**Airtable**](design-md/airtable/DESIGN.md) - Spreadsheet-database hybrid. Colorful, friendly, structured data aesthetic
+- [**Cal.com**](design-md/cal/DESIGN.md) - Open-source scheduling. Clean neutral UI, developer-oriented simplicity
+- [**Clay**](design-md/clay/DESIGN.md) - Creative agency. Organic shapes, soft gradients, art-directed layout
+- [**Figma**](design-md/figma/DESIGN.md) - Collaborative design tool. Vibrant multi-color, playful yet professional
+- [**Framer**](design-md/framer/DESIGN.md) - Website builder. Bold black and blue, motion-first, design-forward
+- [**Intercom**](design-md/intercom/DESIGN.md) - Customer messaging. Friendly blue palette, conversational UI patterns
+- [**Miro**](design-md/miro/DESIGN.md) - Visual collaboration. Bright yellow accent, infinite canvas aesthetic
+- [**Notion**](design-md/notion/DESIGN.md) - All-in-one workspace. Warm minimalism, serif headings, soft surfaces
+- [**Pinterest**](design-md/pinterest/DESIGN.md) - Visual discovery platform. Red accent, masonry grid, image-first
+- [**Webflow**](design-md/webflow/DESIGN.md) - Visual web builder. Blue-accented, polished marketing site aesthetic
 
 ### Fintech & Crypto
 
-- [**Coinbase**](https://getdesign.md/coinbase/design-md) - Crypto exchange. Clean blue identity, trust-focused, institutional feel
-- [**Kraken**](https://getdesign.md/kraken/design-md) - Crypto trading platform. Purple-accented dark UI, data-dense dashboards
-- [**Revolut**](https://getdesign.md/revolut/design-md) - Digital banking. Sleek dark interface, gradient cards, fintech precision
-- [**Wise**](https://getdesign.md/wise/design-md) - International money transfer. Bright green accent, friendly and clear
+- [**Coinbase**](design-md/coinbase/DESIGN.md) - Crypto exchange. Clean blue identity, trust-focused, institutional feel
+- [**Kraken**](design-md/kraken/DESIGN.md) - Crypto trading platform. Purple-accented dark UI, data-dense dashboards
+- [**Revolut**](design-md/revolut/DESIGN.md) - Digital banking. Sleek dark interface, gradient cards, fintech precision
+- [**Wise**](design-md/wise/DESIGN.md) - International money transfer. Bright green accent, friendly and clear
 
 ### Enterprise & Consumer
 
-- [**Airbnb**](https://getdesign.md/airbnb/design-md) - Travel marketplace. Warm coral accent, photography-driven, rounded UI
-- [**Apple**](https://getdesign.md/apple/design-md) - Consumer electronics. Premium white space, SF Pro, cinematic imagery
-- [**IBM**](https://getdesign.md/ibm/design-md) - Enterprise technology. Carbon design system, structured blue palette
-- [**NVIDIA**](https://getdesign.md/nvidia/design-md) - GPU computing. Green-black energy, technical power aesthetic
-- [**SpaceX**](https://getdesign.md/spacex/design-md) - Space technology. Stark black and white, full-bleed imagery, futuristic
-- [**Spotify**](https://getdesign.md/spotify/design-md) - Music streaming. Vibrant green on dark, bold type, album-art-driven
-- [**Uber**](https://getdesign.md/uber/design-md) - Mobility platform. Bold black and white, tight type, urban energy
+- [**Airbnb**](design-md/airbnb/DESIGN.md) - Travel marketplace. Warm coral accent, photography-driven, rounded UI
+- [**Apple**](design-md/apple/DESIGN.md) - Consumer electronics. Premium white space, SF Pro, cinematic imagery
+- [**IBM**](design-md/ibm/DESIGN.md) - Enterprise technology. Carbon design system, structured blue palette
+- [**NVIDIA**](design-md/nvidia/DESIGN.md) - GPU computing. Green-black energy, technical power aesthetic
+- [**SpaceX**](design-md/spacex/DESIGN.md) - Space technology. Stark black and white, full-bleed imagery, futuristic
+- [**Spotify**](design-md/spotify/DESIGN.md) - Music streaming. Vibrant green on dark, bold type, album-art-driven
+- [**Uber**](design-md/uber/DESIGN.md) - Mobility platform. Bold black and white, tight type, urban energy
 
 ### Car Brands
 
-- [**BMW**](https://getdesign.md/bmw/design-md) - Luxury automotive. Dark premium surfaces, precise German engineering aesthetic
-- [**Ferrari**](https://getdesign.md/ferrari/design-md) - Luxury automotive. Chiaroscuro black-white editorial, Ferrari Red with extreme sparseness
-- [**Lamborghini**](https://getdesign.md/lamborghini/design-md) - Luxury automotive. True black cathedral, gold accent, LamboType custom Neo-Grotesk
-- [**Renault**](https://getdesign.md/renault/design-md) - French automotive. Vivid aurora gradients, NouvelR proprietary typeface, zero-radius buttons
-- [**Tesla**](https://getdesign.md/tesla/design-md) - Electric vehicles. Radical subtraction, cinematic full-viewport photography, Universal Sans
-
-
+- [**BMW**](design-md/bmw/DESIGN.md) - Luxury automotive. Dark premium surfaces, precise German engineering aesthetic
+- [**Ferrari**](design-md/ferrari/DESIGN.md) - Luxury automotive. Chiaroscuro black-white editorial, Ferrari Red with extreme sparseness
+- [**Lamborghini**](design-md/lamborghini/DESIGN.md) - Luxury automotive. True black cathedral, gold accent, LamboType custom Neo-Grotesk
+- [**Renault**](design-md/renault/DESIGN.md) - French automotive. Vivid aurora gradients, NouvelR proprietary typeface, zero-radius buttons
+- [**Tesla**](design-md/tesla/DESIGN.md) - Electric vehicles. Radical subtraction, cinematic full-viewport photography, Universal Sans
 
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 - **Improve existing files**: Fix wrong colors, missing tokens, weak descriptions
-- **Report issues**: Let us know if something looks off
+- **Add new designs**: Follow the existing format and structure
 
-Before opening a PR, please [open an issue](https://github.com/VoltAgent/awesome-design-md/issues) first to discuss your idea and get feedback from maintainers.
-
+Before opening a PR, please [open an issue](https://github.com/yamsfeer/awesome-design-md/issues) first to discuss your idea.
 
 ## License
 

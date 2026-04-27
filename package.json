@@ -1,26 +1,38 @@
 {
   "name": "awesome-design-md",
-  "version": "1.0.0",
-  "description": "Curated collection of DESIGN.md files inspired by developer focused websites",
+  "version": "1.1.0",
+  "description": "Curated collection of DESIGN.md files — list, preview, and install design systems from the CLI",
   "bin": {
-    "awesome-design": "./bin/awesome-design.js"
+    "awesome-design": "bin/awesome-design.js"
   },
+  "files": [
+    "bin/",
+    "cli/",
+    "design-data.json",
+    "design-md/"
+  ],
   "scripts": {
     "preview": "open index.html",
     "preview:linux": "xdg-open index.html",
     "preview:win": "start index.html",
     "generate": "node scripts/generate-data.js",
-    "cli": "node cli/index.js",
-    "cli:list": "node cli/index.js list",
-    "cli:preview": "node cli/index.js preview",
-    "cli:install": "node cli/index.js install"
+    "cli": "awesome-design",
+    "cli:list": "awesome-design list",
+    "cli:preview": "awesome-design preview",
+    "cli:install": "awesome-design install"
   },
   "keywords": [
     "design-system",
     "design-tokens",
+    "design-md",
     "ai",
     "llm",
-    "design-md"
+    "cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamsfeer/awesome-design-md.git"
+  },
+  "homepage": "https://yamsfeer.github.io/awesome-design-md/",
   "license": "MIT"
 }
