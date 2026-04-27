@@ -1,0 +1,26 @@
+{
+  "name": "awesome-design-md",
+  "version": "1.0.0",
+  "description": "Curated collection of DESIGN.md files inspired by developer focused websites",
+  "bin": {
+    "awesome-design": "./bin/awesome-design.js"
+  },
+  "scripts": {
+    "preview": "open index.html",
+    "preview:linux": "xdg-open index.html",
+    "preview:win": "start index.html",
+    "generate": "node scripts/generate-data.js",
+    "cli": "node cli/index.js",
+    "cli:list": "node cli/index.js list",
+    "cli:preview": "node cli/index.js preview",
+    "cli:install": "node cli/index.js install"
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "ai",
+    "llm",
+    "design-md"
+  ],
+  "license": "MIT"
+}
